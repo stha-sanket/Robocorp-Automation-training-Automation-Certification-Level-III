@@ -1,0 +1,1407 @@
+V 0.0.4
+T 2025-03-06T09:44:58.909+00:00
+ID 1|ab0181f5-fa6f-11ef-af52-88aedd25a938
+I "sys.platform=win32"
+I "python=3.12.8 | packaged by conda-forge | (main, Dec  5 2024, 14:06:27) [MSC v.1942 64 bit (AMD64)]"
+M a:"consumer.py - consume_traffic_data"
+SR a|0.005
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.005
+M f:"regular"
+M g:"\nCollecting task consume_traffic_data from: c:\\Users\\Acer\\Desktop\\my-rsb-robot\\part-3\\consumer.py\n"
+C f|g|0.006
+M h:"PASS"
+ET h|e|0.743
+M j:"consume_traffic_data"
+M k:"consumer"
+M l:"c:\\Users\\Acer\\Desktop\\my-rsb-robot\\part-3\\consumer.py"
+M m:"\n    Inhuman Insurance, Inc. Artificial Intelligence System automation.\n    Consumes traffic data work items.\n    "
+P i:j|k|l|m|6
+ST i|0.743
+M n:"======================== "
+C f|n|0.744
+M o:"Running: "
+C f|o|0.744
+M p:"task_name"
+C p|j|0.744
+M q:" =========================\n"
+C f|q|0.744
+M r:"METHOD"
+SE i|r|0.745
+M t:"for item in workitems.inputs"
+P s:t|k|l|e|11
+M u:"FOR"
+SE s|u|0.745
+M w:"Step: for item in workitems.inputs"
+P v:w|k|l|e|11
+M x:"FOR_STEP"
+SE v|x|0.753
+M y:"item"
+M z:"Input"
+M A:"Input[id=0,payload={\"traffic_data\": {\"country\":  ... ear\": 2011, \"rate\": 3.69293}},files=[],state=None,saved=True]"
+EA y|z|A
+M C:"WorkItem.payload"
+M D:"robocorp.workitems._workitem"
+M E:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\site-packages\\robocorp\\workitems\\_workitem.py"
+P B:C|D|E|e|53
+SE B|r|0.753
+P F:C|D|E|e|55
+M G:"dict"
+M H:"{'traffic_data': {'country': 'VCT', 'year': 2011, 'rate': 3.69293}}"
+R F|G|H|0.753
+EE r|h|0.753
+P I:j|k|l|e|12
+M J:"traffic_data"
+M K:"{'country': 'VCT', 'year': 2011, 'rate': 3.69293}"
+AS I|J|G|K|0.753
+M M:"if len(traffic_data['country']) == 3"
+P L:M|k|l|e|13
+M N:"IF_SCOPE"
+SE L|N|0.753
+M P:"post_traffic_data_to_sales_system"
+P O:P|k|l|e|30
+SE O|r|0.753
+EA J|G|K
+P Q:P|k|l|e|31
+M R:"url"
+M S:"str"
+M T:"'https://robocorp.com/inhuman-insurance-inc/sales-system-api'"
+AS Q|R|S|T|0.753
+M V:"post"
+M W:"requests.api"
+M X:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\site-packages\\requests\\api.py"
+P U:V|W|X|e|103
+SE U|r|0.754
+EA R|S|T
+M Y:"data"
+M Z:"NoneType"
+M 0:"None"
+EA Y|Z|0
+M 1:"json"
+EA 1|G|K
+M 2:"kwargs"
+M 3:"{}"
+EA 2|G|3
+P 4:V|W|X|e|115
+M 5:"Response"
+M 6:"<Response [200]>"
+R 4|5|6|0.882
+EE r|h|0.882
+P 7:P|k|l|e|32
+M 8:"response"
+AS 7|8|5|6|0.882
+M aa:"Response.json"
+M ab:"requests.models"
+M ac:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\site-packages\\requests\\models.py"
+P 9:aa|ab|ac|e|947
+SE 9|r|0.882
+EA 2|G|3
+P ad:aa|ab|ac|e|974
+M ae:"{'message': 'Resource stored successfully.', 'status': 200}"
+R ad|G|ae|0.882
+EE r|h|0.882
+P af:P|k|l|e|33
+M ag:"tuple"
+M ah:"(200, {'message': 'Resource stored successfully.', 'status': 200})"
+R af|ag|ah|0.882
+EE r|h|0.882
+M aj:"if status == 200"
+P ai:aj|k|l|e|15
+SE ai|N|0.882
+M ak:"status"
+M al:"int"
+M am:"200"
+EA ak|al|am
+M ao:"Input.done"
+P an:ao|D|E|e|448
+SE an|r|0.883
+EE r|h|0.883
+EE N|h|0.883
+EE N|h|0.883
+EE x|h|0.883
+SE v|x|0.883
+M ap:"Input[id=1,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.13947}},files=[],state=None,saved=True]"
+EA y|z|ap
+SE B|r|0.883
+M aq:"{'traffic_data': {'country': 'SWError', 'year': 2019, 'rate': 3.13947}}"
+R F|G|aq|0.883
+EE r|h|0.883
+M ar:"{'country': 'SWError', 'year': 2019, 'rate': 3.13947}"
+AS I|J|G|ar|0.883
+M at:"else (to if len(traffic_data['country']) == 3)"
+P as:at|k|l|e|13
+M au:"ELSE_SCOPE"
+SE as|au|0.883
+SE B|r|0.883
+R F|G|aq|0.883
+EE r|h|0.883
+M aw:"Input.fail"
+P av:aw|D|E|e|459
+SE av|r|0.883
+M ax:"exception_type"
+M ay:"'BUSINESS'"
+EA ax|S|ay
+M az:"code"
+M aA:"'INVALID_TRAFFIC_DATA'"
+EA az|S|aA
+M aB:"message"
+EA aB|G|aq
+EE r|h|0.884
+EE au|h|0.884
+EE x|h|0.884
+SE v|x|0.884
+M aC:"Input[id=2,payload={\"traffic_data\": {\"country\":  ... ear\": 2018, \"rate\": 3.61718}},files=[],state=None,saved=True]"
+EA y|z|aC
+SE B|r|0.884
+M aD:"{'traffic_data': {'country': 'SWE', 'year': 2018, 'rate': 3.61718}}"
+R F|G|aD|0.884
+EE r|h|0.884
+M aE:"{'country': 'SWE', 'year': 2018, 'rate': 3.61718}"
+AS I|J|G|aE|0.884
+SE L|N|0.884
+SE O|r|0.884
+EA J|G|aE
+AS Q|R|S|T|0.884
+SE U|r|0.884
+EA R|S|T
+EA Y|Z|0
+EA 1|G|aE
+EA 2|G|3
+M aF:"<Response [500]>"
+R 4|5|aF|0.94
+EE r|h|0.94
+AS 7|8|5|aF|0.94
+SE 9|r|0.94
+EA 2|G|3
+M aG:"{'message': 'Internal error.', 'status': 500}"
+R ad|G|aG|0.941
+EE r|h|0.941
+M aH:"(500, {'message': 'Internal error.', 'status': 500})"
+R af|ag|aH|0.941
+EE r|h|0.941
+M aJ:"else (to if status == 200)"
+P aI:aJ|k|l|e|15
+SE aI|au|0.942
+M aK:"500"
+EA ak|al|aK
+SE av|r|0.942
+M aL:"'APPLICATION'"
+EA ax|S|aL
+M aM:"'TRAFFIC_DATA_POST_FAILED'"
+EA az|S|aM
+M aN:"'Internal error.'"
+EA aB|S|aN
+EE r|h|0.942
+EE au|h|0.942
+EE N|h|0.942
+EE x|h|0.943
+SE v|x|0.943
+M aO:"Input[id=3,payload={\"traffic_data\": {\"country\":  ... ear\": 2018, \"rate\": 4.52394}},files=[],state=None,saved=True]"
+EA y|z|aO
+SE B|r|0.943
+M aP:"{'traffic_data': {'country': 'SVN', 'year': 2018, 'rate': 4.52394}}"
+R F|G|aP|0.943
+EE r|h|0.943
+M aQ:"{'country': 'SVN', 'year': 2018, 'rate': 4.52394}"
+AS I|J|G|aQ|0.943
+SE L|N|0.943
+SE O|r|0.943
+EA J|G|aQ
+AS Q|R|S|T|0.944
+SE U|r|0.944
+EA R|S|T
+EA Y|Z|0
+EA 1|G|aQ
+EA 2|G|3
+R 4|5|aF|0.985
+EE r|h|0.985
+AS 7|8|5|aF|0.985
+SE 9|r|0.985
+EA 2|G|3
+R ad|G|aG|0.985
+EE r|h|0.985
+R af|ag|aH|0.985
+EE r|h|0.985
+SE aI|au|0.986
+EA ak|al|aK
+SE av|r|0.986
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|0.986
+EE au|h|0.986
+EE N|h|0.986
+EE x|h|0.986
+SE v|x|0.986
+M aR:"Input[id=4,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 2.08609}},files=[],state=None,saved=True]"
+EA y|z|aR
+SE B|r|0.986
+M aS:"{'traffic_data': {'country': 'SGP', 'year': 2019, 'rate': 2.08609}}"
+R F|G|aS|0.986
+EE r|h|0.986
+M aT:"{'country': 'SGP', 'year': 2019, 'rate': 2.08609}"
+AS I|J|G|aT|0.986
+SE L|N|0.987
+SE O|r|0.987
+EA J|G|aT
+AS Q|R|S|T|0.987
+SE U|r|0.987
+EA R|S|T
+EA Y|Z|0
+EA 1|G|aT
+EA 2|G|3
+R 4|5|aF|1.041
+EE r|h|1.041
+AS 7|8|5|aF|1.041
+SE 9|r|1.041
+EA 2|G|3
+R ad|G|aG|1.041
+EE r|h|1.041
+R af|ag|aH|1.041
+EE r|h|1.041
+SE aI|au|1.041
+EA ak|al|aK
+SE av|r|1.041
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.041
+EE au|h|1.041
+EE N|h|1.042
+EE x|h|1.042
+SE v|x|1.042
+M aU:"Input[id=5,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 2.12302}},files=[],state=None,saved=True]"
+EA y|z|aU
+SE B|r|1.042
+M aV:"{'traffic_data': {'country': 'NOR', 'year': 2019, 'rate': 2.12302}}"
+R F|G|aV|1.042
+EE r|h|1.042
+M aW:"{'country': 'NOR', 'year': 2019, 'rate': 2.12302}"
+AS I|J|G|aW|1.042
+SE L|N|1.042
+SE O|r|1.042
+EA J|G|aW
+AS Q|R|S|T|1.042
+SE U|r|1.042
+EA R|S|T
+EA Y|Z|0
+EA 1|G|aW
+EA 2|G|3
+R 4|5|aF|1.072
+EE r|h|1.072
+AS 7|8|5|aF|1.072
+SE 9|r|1.072
+EA 2|G|3
+R ad|G|aG|1.073
+EE r|h|1.073
+R af|ag|aH|1.073
+EE r|h|1.073
+SE aI|au|1.073
+EA ak|al|aK
+SE av|r|1.073
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.073
+EE au|h|1.073
+EE N|h|1.074
+EE x|h|1.074
+SE v|x|1.074
+M aX:"Input[id=6,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.98313}},files=[],state=None,saved=True]"
+EA y|z|aX
+SE B|r|1.074
+M aY:"{'traffic_data': {'country': 'NLD', 'year': 2019, 'rate': 3.98313}}"
+R F|G|aY|1.074
+EE r|h|1.074
+M aZ:"{'country': 'NLD', 'year': 2019, 'rate': 3.98313}"
+AS I|J|G|aZ|1.074
+SE L|N|1.074
+SE O|r|1.074
+EA J|G|aZ
+AS Q|R|S|T|1.074
+SE U|r|1.074
+EA R|S|T
+EA Y|Z|0
+EA 1|G|aZ
+EA 2|G|3
+R 4|5|aF|1.119
+EE r|h|1.119
+AS 7|8|5|aF|1.119
+SE 9|r|1.12
+EA 2|G|3
+R ad|G|aG|1.12
+EE r|h|1.12
+R af|ag|aH|1.12
+EE r|h|1.12
+SE aI|au|1.12
+EA ak|al|aK
+SE av|r|1.12
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.12
+EE au|h|1.12
+EE N|h|1.12
+EE x|h|1.12
+SE v|x|1.12
+M a0:"Input[id=7,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 4.10715}},files=[],state=None,saved=True]"
+EA y|z|a0
+SE B|r|1.12
+M a1:"{'traffic_data': {'country': 'MLT', 'year': 2019, 'rate': 4.10715}}"
+R F|G|a1|1.121
+EE r|h|1.121
+M a2:"{'country': 'MLT', 'year': 2019, 'rate': 4.10715}"
+AS I|J|G|a2|1.121
+SE L|N|1.121
+SE O|r|1.121
+EA J|G|a2
+AS Q|R|S|T|1.121
+SE U|r|1.121
+EA R|S|T
+EA Y|Z|0
+EA 1|G|a2
+EA 2|G|3
+R 4|5|aF|1.435
+EE r|h|1.435
+AS 7|8|5|aF|1.436
+SE 9|r|1.436
+EA 2|G|3
+R ad|G|aG|1.436
+EE r|h|1.436
+R af|ag|aH|1.436
+EE r|h|1.436
+SE aI|au|1.436
+EA ak|al|aK
+SE av|r|1.437
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.437
+EE au|h|1.437
+EE N|h|1.438
+EE x|h|1.438
+SE v|x|1.438
+M a3:"Input[id=8,payload={\"traffic_data\": {\"country\":  ... year\": 2019, \"rate\": 1.6277}},files=[],state=None,saved=True]"
+EA y|z|a3
+SE B|r|1.438
+M a4:"{'traffic_data': {'country': 'MDV', 'year': 2019, 'rate': 1.6277}}"
+R F|G|a4|1.438
+EE r|h|1.438
+M a5:"{'country': 'MDV', 'year': 2019, 'rate': 1.6277}"
+AS I|J|G|a5|1.438
+SE L|N|1.438
+SE O|r|1.438
+EA J|G|a5
+AS Q|R|S|T|1.438
+SE U|r|1.439
+EA R|S|T
+EA Y|Z|0
+EA 1|G|a5
+EA 2|G|3
+R 4|5|6|1.479
+EE r|h|1.479
+AS 7|8|5|6|1.479
+SE 9|r|1.479
+EA 2|G|3
+R ad|G|ae|1.479
+EE r|h|1.48
+R af|ag|ah|1.48
+EE r|h|1.48
+SE ai|N|1.481
+EA ak|al|am
+SE an|r|1.481
+EE r|h|1.481
+EE N|h|1.481
+EE N|h|1.481
+EE x|h|1.481
+SE v|x|1.481
+M a6:"Input[id=9,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 4.07499}},files=[],state=None,saved=True]"
+EA y|z|a6
+SE B|r|1.481
+M a7:"{'traffic_data': {'country': 'LUX', 'year': 2019, 'rate': 4.07499}}"
+R F|G|a7|1.481
+EE r|h|1.481
+M a8:"{'country': 'LUX', 'year': 2019, 'rate': 4.07499}"
+AS I|J|G|a8|1.481
+SE L|N|1.481
+SE O|r|1.481
+EA J|G|a8
+AS Q|R|S|T|1.481
+SE U|r|1.482
+EA R|S|T
+EA Y|Z|0
+EA 1|G|a8
+EA 2|G|3
+R 4|5|aF|1.507
+EE r|h|1.507
+AS 7|8|5|aF|1.507
+SE 9|r|1.507
+EA 2|G|3
+R ad|G|aG|1.507
+EE r|h|1.507
+R af|ag|aH|1.507
+EE r|h|1.507
+SE aI|au|1.507
+EA ak|al|aK
+SE av|r|1.507
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.507
+EE au|h|1.507
+EE N|h|1.507
+EE x|h|1.507
+SE v|x|1.508
+M a9:"Input[id=10,payload={\"traffic_data\": {\"country\":  ... ear\": 2008, \"rate\": 3.52918}},files=[],state=None,saved=True]"
+EA y|z|a9
+SE B|r|1.508
+M ba:"{'traffic_data': {'country': 'LCA', 'year': 2008, 'rate': 3.52918}}"
+R F|G|ba|1.508
+EE r|h|1.508
+M bb:"{'country': 'LCA', 'year': 2008, 'rate': 3.52918}"
+AS I|J|G|bb|1.508
+SE L|N|1.508
+SE O|r|1.508
+EA J|G|bb
+AS Q|R|S|T|1.508
+SE U|r|1.508
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bb
+EA 2|G|3
+R 4|5|aF|1.543
+EE r|h|1.543
+AS 7|8|5|aF|1.543
+SE 9|r|1.543
+EA 2|G|3
+R ad|G|aG|1.543
+EE r|h|1.543
+R af|ag|aH|1.543
+EE r|h|1.543
+SE aI|au|1.544
+EA ak|al|aK
+SE av|r|1.544
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.544
+EE au|h|1.544
+EE N|h|1.544
+EE x|h|1.544
+SE v|x|1.544
+M bc:"Input[id=11,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 1.92481}},files=[],state=None,saved=True]"
+EA y|z|bc
+SE B|r|1.544
+M bd:"{'traffic_data': {'country': 'KIR', 'year': 2019, 'rate': 1.92481}}"
+R F|G|bd|1.544
+EE r|h|1.544
+M be:"{'country': 'KIR', 'year': 2019, 'rate': 1.92481}"
+AS I|J|G|be|1.544
+SE L|N|1.544
+SE O|r|1.544
+EA J|G|be
+AS Q|R|S|T|1.544
+SE U|r|1.544
+EA R|S|T
+EA Y|Z|0
+EA 1|G|be
+EA 2|G|3
+R 4|5|aF|1.585
+EE r|h|1.586
+AS 7|8|5|aF|1.586
+SE 9|r|1.586
+EA 2|G|3
+R ad|G|aG|1.586
+EE r|h|1.586
+R af|ag|aH|1.586
+EE r|h|1.586
+SE aI|au|1.587
+EA ak|al|aK
+SE av|r|1.587
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.587
+EE au|h|1.587
+EE N|h|1.587
+EE x|h|1.587
+SE v|x|1.587
+M bf:"Input[id=12,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.59908}},files=[],state=None,saved=True]"
+EA y|z|bf
+SE B|r|1.587
+M bg:"{'traffic_data': {'country': 'JPN', 'year': 2019, 'rate': 3.59908}}"
+R F|G|bg|1.588
+EE r|h|1.588
+M bh:"{'country': 'JPN', 'year': 2019, 'rate': 3.59908}"
+AS I|J|G|bh|1.588
+SE L|N|1.588
+SE O|r|1.588
+EA J|G|bh
+AS Q|R|S|T|1.588
+SE U|r|1.588
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bh
+EA 2|G|3
+R 4|5|aF|1.633
+EE r|h|1.633
+AS 7|8|5|aF|1.633
+SE 9|r|1.633
+EA 2|G|3
+R ad|G|aG|1.634
+EE r|h|1.634
+R af|ag|aH|1.634
+EE r|h|1.634
+SE aI|au|1.634
+EA ak|al|aK
+SE av|r|1.634
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.634
+EE au|h|1.634
+EE N|h|1.634
+EE x|h|1.634
+SE v|x|1.634
+M bi:"Input[id=13,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.90874}},files=[],state=None,saved=True]"
+EA y|z|bi
+SE B|r|1.635
+M bj:"{'traffic_data': {'country': 'ISR', 'year': 2019, 'rate': 3.90874}}"
+R F|G|bj|1.635
+EE r|h|1.635
+M bk:"{'country': 'ISR', 'year': 2019, 'rate': 3.90874}"
+AS I|J|G|bk|1.635
+SE L|N|1.635
+SE O|r|1.635
+EA J|G|bk
+AS Q|R|S|T|1.635
+SE U|r|1.635
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bk
+EA 2|G|3
+R 4|5|aF|1.664
+EE r|h|1.664
+AS 7|8|5|aF|1.664
+SE 9|r|1.664
+EA 2|G|3
+R ad|G|aG|1.665
+EE r|h|1.665
+R af|ag|aH|1.665
+EE r|h|1.665
+SE aI|au|1.665
+EA ak|al|aK
+SE av|r|1.665
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.665
+EE au|h|1.665
+EE N|h|1.665
+EE x|h|1.665
+SE v|x|1.665
+M bl:"Input[id=14,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 2.04915}},files=[],state=None,saved=True]"
+EA y|z|bl
+SE B|r|1.666
+M bm:"{'traffic_data': {'country': 'ISL', 'year': 2019, 'rate': 2.04915}}"
+R F|G|bm|1.666
+EE r|h|1.666
+M bn:"{'country': 'ISL', 'year': 2019, 'rate': 2.04915}"
+AS I|J|G|bn|1.666
+SE L|N|1.666
+SE O|r|1.666
+EA J|G|bn
+AS Q|R|S|T|1.666
+SE U|r|1.666
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bn
+EA 2|G|3
+R 4|5|aF|1.697
+EE r|h|1.697
+AS 7|8|5|aF|1.697
+SE 9|r|1.697
+EA 2|G|3
+R ad|G|aG|1.697
+EE r|h|1.697
+R af|ag|aH|1.697
+EE r|h|1.697
+SE aI|au|1.698
+EA ak|al|aK
+SE av|r|1.698
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.698
+EE au|h|1.698
+EE N|h|1.698
+EE x|h|1.698
+SE v|x|1.698
+M bo:"Input[id=15,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.13364}},files=[],state=None,saved=True]"
+EA y|z|bo
+SE B|r|1.698
+M bp:"{'traffic_data': {'country': 'IRL', 'year': 2019, 'rate': 3.13364}}"
+R F|G|bp|1.698
+EE r|h|1.698
+M bq:"{'country': 'IRL', 'year': 2019, 'rate': 3.13364}"
+AS I|J|G|bq|1.698
+SE L|N|1.698
+SE O|r|1.698
+EA J|G|bq
+AS Q|R|S|T|1.698
+SE U|r|1.698
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bq
+EA 2|G|3
+R 4|5|aF|1.733
+EE r|h|1.734
+AS 7|8|5|aF|1.734
+SE 9|r|1.734
+EA 2|G|3
+R ad|G|aG|1.734
+EE r|h|1.734
+R af|ag|aH|1.734
+EE r|h|1.734
+SE aI|au|1.735
+EA ak|al|aK
+SE av|r|1.735
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.735
+EE au|h|1.735
+EE N|h|1.735
+EE x|h|1.735
+SE v|x|1.735
+M br:"Input[id=16,payload={\"traffic_data\": {\"country\":  ... ear\": 2006, \"rate\": 4.61297}},files=[],state=None,saved=True]"
+EA y|z|br
+SE B|r|1.735
+M bs:"{'traffic_data': {'country': 'GTM', 'year': 2006, 'rate': 4.61297}}"
+R F|G|bs|1.735
+EE r|h|1.735
+M bt:"{'country': 'GTM', 'year': 2006, 'rate': 4.61297}"
+AS I|J|G|bt|1.735
+SE L|N|1.735
+SE O|r|1.735
+EA J|G|bt
+AS Q|R|S|T|1.735
+SE U|r|1.735
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bt
+EA 2|G|3
+R 4|5|aF|1.764
+EE r|h|1.764
+AS 7|8|5|aF|1.764
+SE 9|r|1.765
+EA 2|G|3
+R ad|G|aG|1.765
+EE r|h|1.765
+R af|ag|aH|1.765
+EE r|h|1.765
+SE aI|au|1.765
+EA ak|al|aK
+SE av|r|1.765
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.765
+EE au|h|1.766
+EE N|h|1.766
+EE x|h|1.766
+SE v|x|1.766
+M bu:"Input[id=17,payload={\"traffic_data\": {\"country\":  ... ear\": 2014, \"rate\": 4.59137}},files=[],state=None,saved=True]"
+EA y|z|bu
+SE B|r|1.766
+M bv:"{'traffic_data': {'country': 'GRD', 'year': 2014, 'rate': 4.59137}}"
+R F|G|bv|1.766
+EE r|h|1.766
+M bw:"{'country': 'GRD', 'year': 2014, 'rate': 4.59137}"
+AS I|J|G|bw|1.766
+SE L|N|1.766
+SE O|r|1.766
+EA J|G|bw
+AS Q|R|S|T|1.766
+SE U|r|1.766
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bw
+EA 2|G|3
+R 4|5|aF|1.801
+EE r|h|1.801
+AS 7|8|5|aF|1.801
+SE 9|r|1.801
+EA 2|G|3
+R ad|G|aG|1.801
+EE r|h|1.801
+R af|ag|aH|1.801
+EE r|h|1.801
+SE aI|au|1.802
+EA ak|al|aK
+SE av|r|1.802
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.802
+EE au|h|1.802
+EE N|h|1.802
+EE x|h|1.802
+SE v|x|1.802
+M bx:"Input[id=18,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.21187}},files=[],state=None,saved=True]"
+EA y|z|bx
+SE B|r|1.802
+M by:"{'traffic_data': {'country': 'GBR', 'year': 2019, 'rate': 3.21187}}"
+R F|G|by|1.802
+EE r|h|1.802
+M bz:"{'country': 'GBR', 'year': 2019, 'rate': 3.21187}"
+AS I|J|G|bz|1.802
+SE L|N|1.802
+SE O|r|1.802
+EA J|G|bz
+AS Q|R|S|T|1.802
+SE U|r|1.802
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bz
+EA 2|G|3
+R 4|5|6|1.831
+EE r|h|1.831
+AS 7|8|5|6|1.831
+SE 9|r|1.831
+EA 2|G|3
+R ad|G|ae|1.831
+EE r|h|1.831
+R af|ag|ah|1.831
+EE r|h|1.831
+SE ai|N|1.832
+EA ak|al|am
+SE an|r|1.832
+EE r|h|1.832
+EE N|h|1.832
+EE N|h|1.832
+EE x|h|1.832
+SE v|x|1.832
+M bA:"Input[id=19,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 0.15972}},files=[],state=None,saved=True]"
+EA y|z|bA
+SE B|r|1.832
+M bB:"{'traffic_data': {'country': 'FSM', 'year': 2019, 'rate': 0.15972}}"
+R F|G|bB|1.832
+EE r|h|1.832
+M bC:"{'country': 'FSM', 'year': 2019, 'rate': 0.15972}"
+AS I|J|G|bC|1.832
+SE L|N|1.832
+SE O|r|1.832
+EA J|G|bC
+AS Q|R|S|T|1.832
+SE U|r|1.832
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bC
+EA 2|G|3
+R 4|5|6|1.863
+EE r|h|1.863
+AS 7|8|5|6|1.863
+SE 9|r|1.863
+EA 2|G|3
+R ad|G|ae|1.863
+EE r|h|1.863
+R af|ag|ah|1.863
+EE r|h|1.863
+SE ai|N|1.864
+EA ak|al|am
+SE an|r|1.864
+EE r|h|1.864
+EE N|h|1.864
+EE N|h|1.864
+EE x|h|1.864
+SE v|x|1.864
+M bD:"Input[id=20,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.88637}},files=[],state=None,saved=True]"
+EA y|z|bD
+SE B|r|1.864
+M bE:"{'traffic_data': {'country': 'FIN', 'year': 2019, 'rate': 3.88637}}"
+R F|G|bE|1.864
+EE r|h|1.865
+M bF:"{'country': 'FIN', 'year': 2019, 'rate': 3.88637}"
+AS I|J|G|bF|1.865
+SE L|N|1.865
+SE O|r|1.865
+EA J|G|bF
+AS Q|R|S|T|1.865
+SE U|r|1.865
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bF
+EA 2|G|3
+R 4|5|aF|1.896
+EE r|h|1.896
+AS 7|8|5|aF|1.896
+SE 9|r|1.896
+EA 2|G|3
+R ad|G|aG|1.896
+EE r|h|1.896
+R af|ag|aH|1.896
+EE r|h|1.896
+SE aI|au|1.896
+EA ak|al|aK
+SE av|r|1.897
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.897
+EE au|h|1.897
+EE N|h|1.897
+EE x|h|1.897
+SE v|x|1.897
+M bG:"Input[id=21,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 4.46408}},files=[],state=None,saved=True]"
+EA y|z|bG
+SE B|r|1.897
+M bH:"{'traffic_data': {'country': 'EST', 'year': 2019, 'rate': 4.46408}}"
+R F|G|bH|1.897
+EE r|h|1.897
+M bI:"{'country': 'EST', 'year': 2019, 'rate': 4.46408}"
+AS I|J|G|bI|1.897
+SE L|N|1.897
+SE O|r|1.897
+EA J|G|bI
+AS Q|R|S|T|1.897
+SE U|r|1.897
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bI
+EA 2|G|3
+R 4|5|aF|1.93
+EE r|h|1.93
+AS 7|8|5|aF|1.93
+SE 9|r|1.93
+EA 2|G|3
+R ad|G|aG|1.93
+EE r|h|1.93
+R af|ag|aH|1.93
+EE r|h|1.93
+SE aI|au|1.931
+EA ak|al|aK
+SE av|r|1.931
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.931
+EE au|h|1.931
+EE N|h|1.931
+EE x|h|1.931
+SE v|x|1.931
+M bJ:"Input[id=22,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.91405}},files=[],state=None,saved=True]"
+EA y|z|bJ
+SE B|r|1.932
+M bK:"{'traffic_data': {'country': 'ESP', 'year': 2019, 'rate': 3.91405}}"
+R F|G|bK|1.932
+EE r|h|1.932
+M bL:"{'country': 'ESP', 'year': 2019, 'rate': 3.91405}"
+AS I|J|G|bL|1.932
+SE L|N|1.932
+SE O|r|1.932
+EA J|G|bL
+AS Q|R|S|T|1.932
+SE U|r|1.932
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bL
+EA 2|G|3
+R 4|5|aF|1.969
+EE r|h|1.969
+AS 7|8|5|aF|1.969
+SE 9|r|1.969
+EA 2|G|3
+R ad|G|aG|1.969
+EE r|h|1.97
+R af|ag|aH|1.97
+EE r|h|1.97
+SE aI|au|1.97
+EA ak|al|aK
+SE av|r|1.97
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|1.97
+EE au|h|1.97
+EE N|h|1.97
+EE x|h|1.97
+SE v|x|1.97
+M bM:"Input[id=23,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.69833}},files=[],state=None,saved=True]"
+EA y|z|bM
+SE B|r|1.97
+M bN:"{'traffic_data': {'country': 'DNK', 'year': 2019, 'rate': 3.69833}}"
+R F|G|bN|1.97
+EE r|h|1.97
+M bO:"{'country': 'DNK', 'year': 2019, 'rate': 3.69833}"
+AS I|J|G|bO|1.97
+SE L|N|1.97
+SE O|r|1.97
+EA J|G|bO
+AS Q|R|S|T|1.97
+SE U|r|1.97
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bO
+EA 2|G|3
+R 4|5|aF|2.008
+EE r|h|2.008
+AS 7|8|5|aF|2.008
+SE 9|r|2.009
+EA 2|G|3
+R ad|G|aG|2.009
+EE r|h|2.009
+R af|ag|aH|2.009
+EE r|h|2.009
+SE aI|au|2.009
+EA ak|al|aK
+SE av|r|2.009
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|2.009
+EE au|h|2.01
+EE N|h|2.01
+EE x|h|2.01
+SE v|x|2.01
+M bP:"Input[id=24,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 3.78353}},files=[],state=None,saved=True]"
+EA y|z|bP
+SE B|r|2.01
+M bQ:"{'traffic_data': {'country': 'DEU', 'year': 2019, 'rate': 3.78353}}"
+R F|G|bQ|2.01
+EE r|h|2.01
+M bR:"{'country': 'DEU', 'year': 2019, 'rate': 3.78353}"
+AS I|J|G|bR|2.01
+SE L|N|2.01
+SE O|r|2.01
+EA J|G|bR
+AS Q|R|S|T|2.01
+SE U|r|2.01
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bR
+EA 2|G|3
+R 4|5|aF|2.041
+EE r|h|2.041
+AS 7|8|5|aF|2.041
+SE 9|r|2.041
+EA 2|G|3
+R ad|G|aG|2.041
+EE r|h|2.041
+R af|ag|aH|2.041
+EE r|h|2.041
+SE aI|au|2.041
+EA ak|al|aK
+SE av|r|2.042
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|2.042
+EE au|h|2.042
+EE N|h|2.042
+EE x|h|2.042
+SE v|x|2.042
+M bS:"Input[id=25,payload={\"traffic_data\": {\"country\":  ... year\": 2013, \"rate\": 4.9831}},files=[],state=None,saved=True]"
+EA y|z|bS
+SE B|r|2.042
+M bT:"{'traffic_data': {'country': 'CYP', 'year': 2013, 'rate': 4.9831}}"
+R F|G|bT|2.042
+EE r|h|2.042
+M bU:"{'country': 'CYP', 'year': 2013, 'rate': 4.9831}"
+AS I|J|G|bU|2.042
+SE L|N|2.042
+SE O|r|2.042
+EA J|G|bU
+AS Q|R|S|T|2.042
+SE U|r|2.042
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bU
+EA 2|G|3
+R 4|5|aF|2.076
+EE r|h|2.076
+AS 7|8|5|aF|2.076
+SE 9|r|2.076
+EA 2|G|3
+R ad|G|aG|2.076
+EE r|h|2.076
+R af|ag|aH|2.077
+EE r|h|2.077
+SE aI|au|2.077
+EA ak|al|aK
+SE av|r|2.077
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|2.077
+EE au|h|2.077
+EE N|h|2.077
+EE x|h|2.077
+SE v|x|2.077
+M bV:"Input[id=26,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 2.24644}},files=[],state=None,saved=True]"
+EA y|z|bV
+SE B|r|2.078
+M bW:"{'traffic_data': {'country': 'CHE', 'year': 2019, 'rate': 2.24644}}"
+R F|G|bW|2.078
+EE r|h|2.078
+M bX:"{'country': 'CHE', 'year': 2019, 'rate': 2.24644}"
+AS I|J|G|bX|2.078
+SE L|N|2.078
+SE O|r|2.078
+EA J|G|bX
+AS Q|R|S|T|2.078
+SE U|r|2.078
+EA R|S|T
+EA Y|Z|0
+EA 1|G|bX
+EA 2|G|3
+R 4|5|aF|2.112
+EE r|h|2.112
+AS 7|8|5|aF|2.112
+SE 9|r|2.112
+EA 2|G|3
+R ad|G|aG|2.113
+EE r|h|2.113
+R af|ag|aH|2.113
+EE r|h|2.113
+SE aI|au|2.113
+EA ak|al|aK
+SE av|r|2.113
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|2.113
+EE au|h|2.113
+EE N|h|2.113
+EE x|h|2.113
+SE v|x|2.113
+M bY:"Input[id=27,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 4.86592}},files=[],state=None,saved=True]"
+EA y|z|bY
+SE B|r|2.113
+M bZ:"{'traffic_data': {'country': 'AUT', 'year': 2019, 'rate': 4.86592}}"
+R F|G|bZ|2.113
+EE r|h|2.113
+M b0:"{'country': 'AUT', 'year': 2019, 'rate': 4.86592}"
+AS I|J|G|b0|2.114
+SE L|N|2.114
+SE O|r|2.114
+EA J|G|b0
+AS Q|R|S|T|2.114
+SE U|r|2.114
+EA R|S|T
+EA Y|Z|0
+EA 1|G|b0
+EA 2|G|3
+R 4|5|aF|2.155
+EE r|h|2.155
+AS 7|8|5|aF|2.155
+SE 9|r|2.155
+EA 2|G|3
+R ad|G|aG|2.155
+EE r|h|2.155
+R af|ag|aH|2.155
+EE r|h|2.155
+SE aI|au|2.155
+EA ak|al|aK
+SE av|r|2.155
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|2.155
+EE au|h|2.155
+EE N|h|2.155
+EE x|h|2.155
+SE v|x|2.155
+M b1:"Input[id=28,payload={\"traffic_data\": {\"country\":  ... ear\": 2019, \"rate\": 4.93914}},files=[],state=None,saved=True]"
+EA y|z|b1
+SE B|r|2.155
+M b2:"{'traffic_data': {'country': 'AUS', 'year': 2019, 'rate': 4.93914}}"
+R F|G|b2|2.155
+EE r|h|2.156
+M b3:"{'country': 'AUS', 'year': 2019, 'rate': 4.93914}"
+AS I|J|G|b3|2.156
+SE L|N|2.156
+SE O|r|2.156
+EA J|G|b3
+AS Q|R|S|T|2.156
+SE U|r|2.156
+EA R|S|T
+EA Y|Z|0
+EA 1|G|b3
+EA 2|G|3
+R 4|5|aF|2.2
+EE r|h|2.2
+AS 7|8|5|aF|2.2
+SE 9|r|2.2
+EA 2|G|3
+R ad|G|aG|2.2
+EE r|h|2.2
+R af|ag|aH|2.2
+EE r|h|2.2
+SE aI|au|2.201
+EA ak|al|aK
+SE av|r|2.201
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|2.201
+EE au|h|2.201
+EE N|h|2.201
+EE x|h|2.201
+SE v|x|2.202
+M b4:"Input[id=29,payload={\"traffic_data\": {\"country\": \"ATG\", \"year\": 2019, \"rate\": 0.0}},files=[],state=None,saved=True]"
+EA y|z|b4
+SE B|r|2.202
+M b5:"{'traffic_data': {'country': 'ATG', 'year': 2019, 'rate': 0.0}}"
+R F|G|b5|2.202
+EE r|h|2.202
+M b6:"{'country': 'ATG', 'year': 2019, 'rate': 0.0}"
+AS I|J|G|b6|2.202
+SE L|N|2.202
+SE O|r|2.202
+EA J|G|b6
+AS Q|R|S|T|2.202
+SE U|r|2.203
+EA R|S|T
+EA Y|Z|0
+EA 1|G|b6
+EA 2|G|3
+R 4|5|aF|2.246
+EE r|h|2.246
+AS 7|8|5|aF|2.246
+SE 9|r|2.246
+EA 2|G|3
+R ad|G|aG|2.246
+EE r|h|2.246
+R af|ag|aH|2.246
+EE r|h|2.246
+SE aI|au|2.247
+EA ak|al|aK
+SE av|r|2.247
+EA ax|S|aL
+EA az|S|aM
+EA aB|S|aN
+EE r|h|2.247
+EE au|h|2.247
+EE N|h|2.247
+EE x|h|2.247
+EE u|h|2.248
+EE r|h|2.248
+C p|j|2.25
+M b7:" status: "
+C f|b7|2.25
+M b8:"PASS\n"
+C f|b8|2.25
+M b9:"================================================================================\n"
+C f|b9|2.251
+ET h|e|2.251
+M cb:"Teardown tasks"
+M cc:"teardown"
+P ca:cb|cc|e|e|0
+ST ca|2.251
+M cd:"Process snapshot"
+SPS cd|2.251
+M ce:"System information:\nMemory: Total: 7.7 G, Available: 461.1 M, Used: 94.2 %\nCPUs: 12"
+P cf:e|e|e|e|0
+L I|ce|cf|0|2.285
+M cg:"Current Process: python.exe (pid: 12196, status: running)\nCommand Line: C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\python.exe -m robocorp.tasks run c:\\Users\\Acer\\Desktop\\my-rsb-robot\\part-3\\consumer.py -t consume_traffic_data\nStarted: 15:29:58\nParent pid: 10252\nResident Set Size: 52.6 M\nVirtual Memory Size: 37.3 M"
+L I|cg|cf|0|2.297
+M ch:"OutputToPortThread|Thread ID: 7056 (daemon)"
+STD ch|2.297
+M ci:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\threading.py"
+M cj:"_bootstrap"
+M ck:"self._bootstrap_inner()"
+TBE ci|1032|cj|ck
+M cl:"self"
+M cm:"Thread"
+M cn:"<Thread(OutputToPortThread, started daemon 7056)>"
+TBV cl|cm|cn
+M co:"_bootstrap_inner"
+M cp:"self.run()"
+TBE ci|1075|co|cp
+TBV cl|cm|cn
+M cq:"run"
+M cr:"self._target(*self._args, **self._kwargs)"
+TBE ci|1012|cq|cr
+TBV cl|cm|cn
+M cs:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\site-packages\\robocorp\\tasks\\_log_output_setup.py"
+M ct:"write_in_thread"
+M cu:"msg = q.get()"
+TBE cs|73|ct|cu
+M cv:"msg"
+M cw:"'ST ca|2.246\\n'"
+TBV cv|S|cw
+M cx:"client_socket"
+M cy:"socket"
+M cz:"<socket.socket fd=792, family=2, type=1, proto=0, laddr=('127.0.0.1', 59328), raddr=('127.0.0.1', 58780)>"
+TBV cx|cy|cz
+M cA:"log"
+M cB:"module"
+M cC:"<module 'robocorp.log' from 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV cA|cB|cC
+M cD:"port_in_env"
+M cE:"'58780'"
+TBV cD|S|cE
+M cF:"q"
+M cG:"Queue"
+M cH:"<queue.Queue object at 0x000002823731BBF0>"
+TBV cF|cG|cH
+M cI:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\queue.py"
+M cJ:"get"
+M cK:"self.not_empty.wait()"
+TBE cI|171|cJ|cK
+TBV cl|cG|cH
+M cL:"block"
+M cM:"bool"
+M cN:"True"
+TBV cL|cM|cN
+M cO:"timeout"
+TBV cO|Z|0
+M cP:"wait"
+M cQ:"waiter.acquire()"
+TBE ci|355|cP|cQ
+M cR:"Condition"
+M cS:"<Condition(<unlocked _thread.lock object at 0x0000028237511A00>, 1)>"
+TBV cl|cR|cS
+TBV cO|Z|0
+M cT:"waiter"
+M cU:"lock"
+M cV:"<locked _thread.lock object at 0x00000282372FBF80>"
+TBV cT|cU|cV
+M cW:"saved_state"
+TBV cW|Z|0
+M cX:"gotit"
+M cY:"False"
+TBV cX|cM|cY
+ETD 2.3
+M cZ:"MainThread|Thread ID: 14548 (non daemon)"
+STD cZ|2.3
+M c0:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\site-packages\\robocorp\\log\\__init__.py"
+M c1:"process_snapshot"
+M c2:"robo_logger.process_snapshot()"
+TBE c0|270|c1|c2
+M c3:"logger_instances"
+M c4:"{<robocorp.log._robo_logger._RoboLogger object at 0x00000282374D2ED0>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x00000282354AA030>: 1}"
+TBV c3|G|c4
+M c5:"robo_logger"
+M c6:"_RoboLogger"
+M c7:"<robocorp.log._robo_logger._RoboLogger object at 0x00000282374D2ED0>"
+TBV c5|c6|c7
+M c8:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M c9:"new_func"
+M da:"return func(self, *args, **kwargs)"
+TBE c8|20|c9|da
+TBV cl|c6|c7
+M db:"args"
+M dc:"()"
+TBV db|ag|dc
+TBV 2|G|3
+M dd:"func"
+M de:"function"
+M df:"<function _RoboLogger.process_snapshot at 0x00000282374F0B80>"
+TBV dd|de|df
+M dg:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE c8|416|c1|dg
+TBV cl|c6|c7
+M dh:"hide_vars"
+TBV dh|cM|cY
+M di:"C:\\ProgramData\\sema4ai\\ht\\a4f9fcb_c5e81ff_1c0bc041\\Lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M dj:"self._dump_threads(hide_vars)"
+TBE di|748|c1|dj
+M dk:"_RoboOutputImpl"
+M dl:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x00000282374886B0>"
+TBV cl|dk|dl
+TBV dh|cM|cY
+TBV cA|cB|cC
+M dm:"entry_id"
+M dn:"'ps_0'"
+TBV dm|S|dn
+M do:"entry_type"
+M dp:"'process_snapshot'"
+TBV do|S|dp
+M dq:"psutil"
+M dr:"<module 'psutil' from 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV dq|cB|dr
+M ds:"AccessDenied"
+M dt:"type"
+M du:"<class 'psutil.AccessDenied'>"
+TBV ds|dt|du
+M dv:"NoSuchProcess"
+M dw:"<class 'psutil.NoSuchProcess'>"
+TBV dv|dt|dw
+M dx:"ZombieProcess"
+M dy:"<class 'psutil.ZombieProcess'>"
+TBV dx|dt|dy
+M dz:"curr_process"
+M dA:"Process"
+M dB:"psutil.Process(pid=12196, name='python.exe', status='running', started='15:29:58')"
+TBV dz|dA|dB
+M dC:"log_info"
+M dD:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x000002823721F600>"
+TBV dC|de|dD
+M dE:"memory_info"
+M dF:"'Total: 7.7 G, Available: 461.1 M, Used: 94.2 %'"
+TBV dE|S|dF
+M dG:"child_i"
+M dH:"0"
+TBV dG|al|dH
+M dI:"child"
+TBV dI|dA|dB
+M dJ:"name"
+M dK:"'python.exe'"
+TBV dJ|S|dK
+M dL:"'running'"
+TBV ak|S|dL
+M dM:"create_time"
+M dN:"'15:29:58'"
+TBV dM|S|dN
+M dO:"ppid"
+M dP:"'10252'"
+TBV dO|S|dP
+M dQ:"cmdline"
+M dR:"'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\python.exe -m robocorp.tasks run c:\\\\Users\\\\Acer\\\\Desktop\\\\my-rsb-robot\\\\part-3\\\\consumer.py -t consume_traffic_data'"
+TBV dQ|S|dR
+M dS:"rss"
+M dT:"'52.6 M'"
+TBV dS|S|dT
+M dU:"vms"
+M dV:"'37.3 M'"
+TBV dU|S|dV
+M dW:"proc_memory_info"
+M dX:"pmem"
+M dY:"pmem(rss=55193600, vms=39071744, num_page_faults=20361, peak_wset=55558144, wset=55193600, peak_paged_pool=210328, paged_pool=210152, peak_nonpaged_pool=26012, nonpaged_pool=24384, pagefile=39071744, peak_pagefile=39477248, private=39071744)"
+TBV dW|dX|dY
+M dZ:"'Current Process: python.exe (pid: 12196, status: running)\\nCommand Line: C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\python.exe -m robocorp.tasks run c:\\\\Users\\\\Acer\\\\Desktop\\\\my-rsb-robot\\\\part-3\\\\consumer.py -t consume_traffic_data\\nStarted: 15:29:58\\nParent pid: 10252\\nResident Set Size: 52.6 M\\nVirtual Memory Size: 37.3 M'"
+TBV aB|S|dZ
+M d0:"_dump_threads"
+M d1:"stack.append((f, f.f_lineno))"
+TBE di|769|d0|d1
+TBV cl|dk|dl
+TBV dh|cM|cY
+M d2:"thread_id"
+M d3:"14548"
+TBV d2|al|d3
+M d4:"frame"
+M d5:"<frame at 0x00000282384D8480, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV d4|d4|d5
+M d6:"thread"
+M d7:"_MainThread"
+M d8:"<_MainThread(MainThread, started 14548)>"
+TBV d6|d7|d8
+M d9:"title"
+M ea:"'MainThread|Thread ID: 14548 (non daemon)'"
+TBV d9|S|ea
+M eb:"f"
+M ec:"<frame at 0x0000028237CAC2B0, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 494, code run>"
+TBV eb|d4|ec
+M ed:"stack"
+M ee:"list"
+M ef:"[(<frame at 0x0000028238312400, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x0000028238584200, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x00000282384941C0, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x0000028238ADB4C0, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x00000282384D8480, file 'C:\\\\ProgramData\\\\sema4ai\\\\ht\\\\a4f9fcb_c5e81ff_1c0bc041\\\\Lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV ed|ee|ef
+ETD 2.308
+EPS 2.308
+ET h|e|2.326
+ER h|2.326

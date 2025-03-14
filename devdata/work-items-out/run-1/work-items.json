@@ -1,0 +1,302 @@
+[
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "VCT",
+                "year": 2011,
+                "rate": 3.69293
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "SWError",
+                "year": 2019,
+                "rate": 3.13947
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "SWE",
+                "year": 2018,
+                "rate": 3.61718
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "SVN",
+                "year": 2018,
+                "rate": 4.52394
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "SGP",
+                "year": 2019,
+                "rate": 2.08609
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "NOR",
+                "year": 2019,
+                "rate": 2.12302
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "NLD",
+                "year": 2019,
+                "rate": 3.98313
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "MLT",
+                "year": 2019,
+                "rate": 4.10715
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "MDV",
+                "year": 2019,
+                "rate": 1.6277
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "LUX",
+                "year": 2019,
+                "rate": 4.07499
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "LCA",
+                "year": 2008,
+                "rate": 3.52918
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "KIR",
+                "year": 2019,
+                "rate": 1.92481
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "JPN",
+                "year": 2019,
+                "rate": 3.59908
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "ISR",
+                "year": 2019,
+                "rate": 3.90874
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "ISL",
+                "year": 2019,
+                "rate": 2.04915
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "IRL",
+                "year": 2019,
+                "rate": 3.13364
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "GTM",
+                "year": 2006,
+                "rate": 4.61297
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "GRD",
+                "year": 2014,
+                "rate": 4.59137
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "GBR",
+                "year": 2019,
+                "rate": 3.21187
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "FSM",
+                "year": 2019,
+                "rate": 0.15972
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "FIN",
+                "year": 2019,
+                "rate": 3.88637
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "EST",
+                "year": 2019,
+                "rate": 4.46408
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "ESP",
+                "year": 2019,
+                "rate": 3.91405
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "DNK",
+                "year": 2019,
+                "rate": 3.69833
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "DEU",
+                "year": 2019,
+                "rate": 3.78353
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "CYP",
+                "year": 2013,
+                "rate": 4.9831
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "CHE",
+                "year": 2019,
+                "rate": 2.24644
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "AUT",
+                "year": 2019,
+                "rate": 4.86592
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "AUS",
+                "year": 2019,
+                "rate": 4.93914
+            }
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "traffic_data": {
+                "country": "ATG",
+                "year": 2019,
+                "rate": 0.0
+            }
+        },
+        "files": {}
+    }
+]

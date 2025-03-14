@@ -1,0 +1,10 @@
+
+Collecting tasks from: tasks.py
+======================== Running: [96mproduce_traffic_data[0m =========================
+[96mproduce_traffic_data[0m status: PASS
+================================================================================
+======================== Running: [96mconsume_traffic_data[0m =========================
+consume
+[96mconsume_traffic_data[0m status: PASS
+================================================================================
+Robocorp Log (html): c:\Users\Acer\Desktop\my-rsb-robot\part-3\output\log.html
